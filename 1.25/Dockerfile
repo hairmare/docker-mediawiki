@@ -1,8 +1,8 @@
 FROM php:5.6-apache
 MAINTAINER Mike Dillon <mike@appropriate.io>
 
-ENV MEDIAWIKI_VERSION 1.24
-ENV MEDIAWIKI_FULL_VERSION 1.24.2
+ENV MEDIAWIKI_VERSION 1.25
+ENV MEDIAWIKI_FULL_VERSION 1.25.1
 
 RUN set -x; \
     apt-get update \
