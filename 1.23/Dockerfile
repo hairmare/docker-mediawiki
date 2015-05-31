@@ -7,12 +7,11 @@ ENV MEDIAWIKI_FULL_VERSION 1.23.9
 RUN set -x; \
     apt-get update \
     && apt-get install -y --no-install-recommends \
-        g++ \
         libicu52 \
         libicu-dev \
     && pecl install intl \
     && echo extension=intl.so >> /usr/local/etc/php/conf.d/ext-intl.ini \
-    && apt-get purge -y --auto-remove g++ libicu-dev \
+    && apt-get purge -y --auto-remove libicu-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install mysqli opcache
