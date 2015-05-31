@@ -1,5 +1,5 @@
 FROM php:5.6-apache
-MAINTAINER Synctree App Force <appforce+docker@synctree.com>
+MAINTAINER Mike Dillon <mike@appropriate.io>
 
 ENV MEDIAWIKI_VERSION 1.23
 ENV MEDIAWIKI_FULL_VERSION 1.23.9
